@@ -16,4 +16,23 @@
   > 查看创建状态
   >> 查看当前所有文件：ls -al  
   >> 存在.git文件，创建成功
-2.
+  
+2. 提交文件到仓库
+
+  > 增加文件  
+  >> 先在目录里创建一个文件： touch 文件名  
+  >> 编辑文件： vim 文件名  
+  >> 按Esc切换到命令行，wq保存退出  
+  >> 查看当前目录文件的状态： git status  
+  >> 将文件添加关注，加入仓库中：git add 文件名  
+  >> 再次查看状态时，文件已经被关注  
+  >> 提交到仓库：git commit 此时编辑提交的状态，按Ctrl+x，y+enter退出保存  
+  >> 查看所有提交状态：git log
+  
+  > 在第一次提交时，要配置用户信息，执行如下命令：
+  
+    * git config --global user.name，填写github用户名
+    
+    * git config --global user.email，填写github用户邮箱
+    
+    * git config --global core.editor vim配置提交时的编辑器
