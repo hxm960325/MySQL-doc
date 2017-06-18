@@ -6,16 +6,14 @@
 # Git的使用
 1. 创建版本库  
   > 先创建一个目录，用来存放仓库
-  >> 创建目录：mkdir 目录名
-  
+  >> 创建目录：mkdir 目录名 
   >> 切换到该目录：cd 目录名
+  
   > 初始化仓库
   >> 初始化：git init
-  
   >> 提示初始化成功，存在一个空的仓库：Initialized empty Git repository in /home/user/目录名/.git/
   
   > 查看创建状态
-  >> 查看当前所有文件：ls -al
-  
+  >> 查看当前所有文件：ls -al  
   >> 存在.git文件，创建成功
 2.
