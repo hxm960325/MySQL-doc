@@ -47,12 +47,10 @@
   > 执行git rm 文件名  
   > 提交到仓库：git commit  
 5. 从仓库中忽略文件，执行：touch .gitignore
-
 6. 版本之间对比
   > git diff  
- git diff commitID1 commitID2
-  
+ git diff commitID1 commitID2  
 7. 打patch
-   > 查看所有提交信息：git log，看共有几次提交  
+  > 查看所有提交信息：git log，看共有几次提交  
  git生成patch：git format-patch -p5，假设有5次提交    
  git打patch：git am patch-name  
