@@ -1,5 +1,6 @@
 ## 技术文档
 >[Linux安装Ubuntu及基本命令](./Linux安装Ubuntu及基本命令.md)  
+>[Github安装及使用](./Github安装及使用.md)  
 >[MySQL安装与配置](./MySQL安装与配置.md)
 
 ## 课程设计
