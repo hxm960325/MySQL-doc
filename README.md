@@ -1,7 +1,7 @@
 ## 技术文档
 >[Linux下Ubuntu的基本命令](./Linux下Ubuntu的基本命令.md)  
 >[Github安装及使用](./Github安装及使用.md)  
->[Markdown](./Markdowm)  
+>[Markdown语法](./Markdowm语法)  
 >[MySQL安装与配置](./MySQL安装与配置.md)
 
 ## 课程设计
