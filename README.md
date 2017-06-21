@@ -1,7 +1,7 @@
 ## 技术文档
 >[Linux下Ubuntu的基本命令](./Linux下Ubuntu的基本命令.md)  
 >[Github安装及使用](./Github安装及使用.md)  
->[Markdown语法](./Markdowm语法)  
+>[Markdown语法](./Markdowm语法.md)  
 >[MySQL安装与配置](./MySQL安装与配置.md)    
 >[Apache,CGI及MySQL的C接口](./Apache,CGI及MySQL的C接口.md)     
 >[C语言连接MySQL数据库](./C语言连接MySQL数据库.md)
