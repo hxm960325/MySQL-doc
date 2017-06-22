@@ -2,7 +2,7 @@
 >[Ubuntu安装](./technology/Ubuntu安装.md)    
 >[Linux下vim的安装及基本命令](./technology/Linux下vim的安装及基本命令.md)  
 >[Github安装及使用](./technology/Github安装及使用.md)  
->[Markdown语法](./technology/Markdowm语法)  
+>[Markdown语法](./technology/Markdown语法)  
 >[MySQL安装与配置](./technology/MySQL安装与配置.md)    
 >[Apache,CGI及MySQL的C接口](./technology/Apache，CGI及MySQL的C接口.md)     
 >[C语言连接MySQL数据库遇到的问题](./technology/C语言连接MySQL数据库遇到的问题.md)
