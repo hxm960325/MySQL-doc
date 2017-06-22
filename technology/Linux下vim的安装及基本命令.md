@@ -1,4 +1,4 @@
-# Linux下Ubuntu的基本命令
+# Linux下vim的安装及基本命令
 1. vim的安装
    * 执行命令sudo apt-get install vim
    * 安装完成 
