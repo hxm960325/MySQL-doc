@@ -135,7 +135,7 @@ where information.sid=score.sid and course.cid=score.cid;
 | 教师编号 | tid | char(12) |   |   |
 | 课程号 | cid | char(10) |   |   |
 | 课程名 | cname | char(10) |   |   |
-###### 创建视图教师教授的课程
+##### 创建视图教师教授的课程
 ```mysql
 create view tc(tid,cid,cname)
 as
@@ -143,3 +143,18 @@ select teacher.tid,course.cid,course.cname
 from teacher,course
 where teacher.cid=course.cid;
 ```
+4. 整体功能设计   
+> 学生根据学号登录系统   
+>> 查询学生信息
+>> 修改学生信息     
+>> 查看课程成绩     
+>> 查看所选课程      
+>> 学生选课
+
+> 教师根据教工号登录系统    
+>> 添加学生信息    
+>> 查询学生信息    
+>> 删除学生信息    
+>> 永久删除学生信息    
+>> 录入学生成绩    
+>> 查看教授课程
