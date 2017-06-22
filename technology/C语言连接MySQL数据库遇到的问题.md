@@ -55,3 +55,13 @@
 		fprintf(cgiOut, "该学生不存在\n");
 	}
 ```
+4. 对于学生信息的删除操作（真删假删），作如下解决：
+> 在学生信息表information中增加一个状态位statu，默认值为1.当statu=1时，该学生的信息在查询时可以查看，当statu=0时，该学生信息在查询时不能显示
+>> 真删除：执行删除操作，根据学生学号删除，从数据库彻底删除该学生的信息
+```c
+sprintf(sql, "delete from information where sid='%s'",sid);
+```
+>> 假删除：执行修改操作，将statu的直修改为0，该学生信息还存在于数据库
+```c
+sprintf(sql, "update information set statu=0 where sid='%s'",sid);
+```
