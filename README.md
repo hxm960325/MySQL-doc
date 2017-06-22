@@ -1,6 +1,6 @@
 ## 技术文档
 >[Ubuntu安装](./technology/Ubuntu安装.md)    
->[Linux下Ubuntu的基本命令](./technology/Linux下Ubuntu的基本命令.md)  
+>[Linux下vim的安装及基本命令](./technology/Linux下vim的安装及基本命令.md)  
 >[Github安装及使用](./technology/Github安装及使用.md)  
 >[Markdown语法](./technology/Markdowm语法.md)  
 >[MySQL安装与配置](./technology/MySQL安装与配置.md)    
