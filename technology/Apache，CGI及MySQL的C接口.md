@@ -40,4 +40,56 @@
    * 再次执行make，所有警告都没有了，此时进行提交。
    * 执行：make install，将cgi拷贝到/usr/lib/cgi-bin/sx
 3. 回到浏览器进行测试，进入localhost学生管理系统，进行增删改查均成功。
-   
+4. 获取表单数据   
+```c
+cgiFormResultType   cgiFormString(char *name, char *result, int max);
+参数：  name, 指定要获取的表单项的名字
+       result,将获得的数据存储到result中
+       max， 指定最多读取的字符个数
+```
+5. fprintf函数
+``` c
+int fprintf(FILE *stream, const char *format, ...);
+//功能： 将格式化的语句输出到指定的流
+fprintf(stdin, "helloworld\n")  
+//等价于 printf("helloworld\n);
+```
+6. atoi函数
+```c
+int atoi(const char *nptr);
+//功能：将一个字符串转换成对应的数字，比如：“1234” ==》 1234
+```
+7. 接口介绍
+```c
+MYSQL *mysql_init(MYSQL *mysql)
+//功能：初始化函数，参数为NULL即可，接收返回值。
+//失败，NULL
+```
+
+```c
+MYSQL *mysql_real_connect(MYSQL *mysql, const char *host, const char *user, const char *passwd, const char *db, unsigned int port, const char *unix_socket, unsigned long client_flag)
+//功能：连接mysql服务器
+//失败，NULL
+```
+
+```c
+void mysql_close(MYSQL *mysql)
+//功能：关闭服务器连接
+```
+
+```c
+int mysql_real_query(MYSQL *mysql, const char *stmt_str, unsigned long length)
+//功能：执行sql语句，sql语句不能以“；”结尾
+//成功，0
+//失败， 非0
+```
+
+```c
+int mysql_query(MYSQL *mysql, const char *stmt_str)
+//功能：执行sql语句，sql语句不能以“；”结尾
+```
+
+```c
+void mysql_free_result(MYSQL_RES *result)
+//功能：释放空间
+```
