@@ -146,15 +146,54 @@ where teacher.cid=course.cid;
 4. 整体功能设计   
 > 学生根据学号登录系统   
 >> 查询学生信息
->> 修改学生信息     
+```c
+sprintf(sql, "select sid,sname,sex,age,scid from information where sid = '%s'", sid);
+```
+>> 修改学生信息   
+```c
+//先查询再修改
+sprintf(sql, "select * from information where sid='%s' ",sid);
+sprintf(sql, "update information set sname='%s', sex='%s', age= %d, scid='%s' where sid = '%s'",sname, sex, atoi(age), scid, sid);
+```
 >> 查看课程成绩     
->> 查看所选课程      
+```c
+sprintf(sql, "select * from stu_infor where sid = '%s'", sid);
+```
+>> 查看所选课程  
+```c
+sprintf(sql, "select * from sc where sid= '%s'",sid);
+```
 >> 学生选课
+```c
+sprintf(sql, "insert into sc values('%s', '%s', '%s')", sid, cid, cname);
+```
 
 > 教师根据教工号登录系统    
 >> 添加学生信息    
->> 查询学生信息    
+```c
+sprintf(sql, "insert into information(sid,sname,sex,age,scid) values('%s', '%s', '%s', %d, '%s')", sid, sname, sex, atoi(age), scid);
+```
+>> 查询学生信息  
+```c
+sprintf(sql, "select sid,sname,sex,age,scid from information where sid = '%s'", sid);
+```
 >> 删除学生信息    
->> 永久删除学生信息    
+```c
+//先查询再删除（修改状态位）
+sprintf(sql, "select * from information where sid='%s' ",sid);
+sprintf(sql, "select * from information where sid='%s' ",sid);
+```
+>> 永久删除学生信息  
+```c
+//先查询再删除
+sprintf(sql, "select * from information where sid='%s' ",sid);
+sprintf(sql, "delete from information where sid='%s'",sid);
+```
 >> 录入学生成绩    
+```c
+sprintf(sql, "insert into score values('%s', '%s', %d)", sid, cid, atoi(grade));
+```
 >> 查看教授课程
+```c
+sprintf(sql, "select * from tc where tid='%s'",tid);
+```
