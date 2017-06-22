@@ -4,7 +4,7 @@
 >[Github安装及使用](./technology/Github安装及使用.md)  
 >[Markdown语法](./technology/Markdowm语法)  
 >[MySQL安装与配置](./technology/MySQL安装与配置.md)    
->[Apache,CGI及MySQL的C接口](./technology/Apache,CGI及MySQL的C接口.md)     
+>[Apache,CGI及MySQL的C接口](./technology/Apache，CGI及MySQL的C接口.md)     
 >[C语言连接MySQL数据库遇到的问题](./technology/C语言连接MySQL数据库遇到的问题.md)
 
 ## 课程设计
