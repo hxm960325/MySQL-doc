@@ -38,16 +38,16 @@ MySQL是开源的，支持大型的数据库，允许于多个系统上，并且
    1. 执行命令sudo apt-get install mysql-workbench    
    2. 执行mysql-workbench进入mysql-workbench，安装成功
 5. MySQL的使用
-   1. 打开终端命令
-   2. 在终端命令行执行命令：mysql –u root –p 回车输入密码123456
-   3. 进入mysql命令 ，对数据库的操作命令有：
-   4. 创建数据库，执行命令：create database <数据库名>;
-   5. 显示数据库，执行命令：show databases;
-   6. 删除数据库，执行命令：drop database <数据库名>;
-   7. 使用数据库，执行命令：use <数据库名>;
-   8. 创建数据库表，执行命令：create table <表名>(<字段名1><类型1>[,…<字段名n>]);
-   9. 表中插入数据，执行命令：insert into <表名> values(值1,…,值n);
-   10. 查询表中数据，执行命令：select [属性] from [表名] where 条件
-   11. 修改表中数据，执行命令：update set 字段=新值,…where 条件
-   12. 增加表中字段，执行命令：alter table 表名 add 字段 类型;
+   * 打开终端命令
+   * 在终端命令行执行命令：mysql –u root –p 回车输入密码123456
+   * 进入mysql命令 ，对数据库的操作命令有：
+   * 创建数据库，执行命令：create database <数据库名>;
+   * 显示数据库，执行命令：show databases;
+   * 删除数据库，执行命令：drop database <数据库名>;
+   * 使用数据库，执行命令：use <数据库名>;
+   * 创建数据库表，执行命令：create table <表名>(<字段名1><类型1>[,…<字段名n>]);
+   * 表中插入数据，执行命令：insert into <表名> values(值1,…,值n);
+   * 查询表中数据，执行命令：select [属性] from [表名] where 条件
+   * 修改表中数据，执行命令：update set 字段=新值,…where 条件
+   * 增加表中字段，执行命令：alter table 表名 add 字段 类型;
 
