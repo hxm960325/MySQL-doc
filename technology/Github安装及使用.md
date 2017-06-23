@@ -54,3 +54,5 @@
   > 查看所有提交信息：git log，看共有几次提交  
  git生成patch：git format-patch -p5，假设有5次提交    
  git打patch：git am patch-name  
+8. git同步到本地，执行命令：git pull origin master
+9. git将远程信息更新到本地，执行命令：git fetch origin
