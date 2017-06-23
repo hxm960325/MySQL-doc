@@ -17,8 +17,15 @@
    * 切换到根目录，更新源sudo apt-get update
    * 进行安装，执行：sudo apt-get install libmysqlclient-dev
 ### atom代码导入以及连接数据库
-1. 进入nts.newbieol.com实训，在资料中下载压缩包cgi-stu
-2. 解压压缩包cgi-stu，将cgi-stu文件夹拷贝到github下，执行如下命令：
+1. 安装atom
+   * 进入nts.newbieol.com实训，在资料中下载压缩包cgi-stu
+   * 终端命令执行命令：wget –c 安装包下载地址
+   * 安装atom，执行命令：sudo dpkg -i atom-amd64.deb
+2. 配置及安装插件
+   * 搜索atom，打开atom
+   * 选择顶部功能栏的edit，进入preferences，选择左边功能栏editor，勾选soft wrap和soft wrap atpreferred 
+   * 选择Install，安装插件
+3. 解压压缩包cgi-stu，将cgi-stu文件夹拷贝到github下，执行如下命令：
    * 切换到根目录，执行cd
    * 切换到github文件夹，执行cd github
    * 切换到cgi-stu文件夹，执行：cd cgi-stu
@@ -39,27 +46,27 @@
    * 执行make，修改warning，在atom中打开add.c、sel.c、del.c、mod.c，修改数据库名称以及密码，在警告行修改为return -1；
    * 再次执行make，所有警告都没有了，此时进行提交。
    * 执行：make install，将cgi拷贝到/usr/lib/cgi-bin/sx
-3. 回到浏览器进行测试，进入localhost学生管理系统，进行增删改查均成功。
-4. 获取表单数据   
+4. 回到浏览器进行测试，进入localhost学生管理系统，进行增删改查均成功。
+5. 获取表单数据   
 ```c
 cgiFormResultType   cgiFormString(char *name, char *result, int max);
 参数：  name, 指定要获取的表单项的名字
        result,将获得的数据存储到result中
        max， 指定最多读取的字符个数
 ```
-5. fprintf函数
+6. fprintf函数
 ``` c
 int fprintf(FILE *stream, const char *format, ...);
 //功能： 将格式化的语句输出到指定的流
 fprintf(stdin, "helloworld\n")  
 //等价于 printf("helloworld\n);
 ```
-6. atoi函数
+7. atoi函数
 ```c
 int atoi(const char *nptr);
 //功能：将一个字符串转换成对应的数字，比如：“1234” ==》 1234
 ```
-7. 接口介绍
+8. 接口介绍
 ```c
 MYSQL *mysql_init(MYSQL *mysql)
 //功能：初始化函数，参数为NULL即可，接收返回值。
