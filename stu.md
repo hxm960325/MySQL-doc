@@ -176,13 +176,13 @@ sprintf(sql, "insert into information(sid,sname,sex,age,scid) values('%s', '%s',
 >> 查询学生信息  
 ```c
 if (sid[0] == '*')
-	{
-		sprintf(sql, "select sid,sname,sex,age,scid from information where statu=1");
-	}
-	else
-	{
-		sprintf(sql, "select sid,sname,sex,age,scid from information where sid = '%s'", sid);
-	}
+{
+   sprintf(sql, "select sid,sname,sex,age,scid from information where statu=1");
+}
+else
+{
+   sprintf(sql, "select sid,sname,sex,age,scid from information where sid = '%s'", sid);
+}
 ```
 >> 删除学生信息    
 ```c
